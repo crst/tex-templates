@@ -1,0 +1,63 @@
+\documentclass[11pt,a4paper]{moderncv}
+\moderncvtheme[grey]{casual}
+
+\usepackage{palatino}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+
+
+\usepackage[scale=0.75]{geometry}
+\setlength{\hintscolumnwidth}{3cm}
+\AtBeginDocument{\recomputelengths}
+
+
+\firstname{Foo}
+\familyname{Bar}
+\address{ABC Road 123}{12345 City}
+\mobile{123~456~789}
+\email{foo@bar}
+
+
+\nopagenumbers{}
+
+\definecolor{links}{HTML}{0000CD}
+
+\AtBeginDocument{
+ \hypersetup{
+   pdftitle=,
+   pdfsubject=,
+   pdfkeywords=,
+   pdfcreator =,
+   pdfproducer =,
+   colorlinks=true,
+   urlcolor = links
+  }
+}
+
+
+\begin{document}
+
+\maketitle
+
+\section{Experience}
+
+\cventry{2000--2010}{Programmer}{}{}{}
+  {Wrote software.}
+
+\section{Education}
+\cventry{2000--2010}
+        {Computer Science}
+        {University}
+        {}
+        {}
+        {}
+
+
+\section{Skills}
+
+\cvline{Github}{\href{http://www.github.com/crst}{http://www.github.com/crst}}
+
+
+\end{document}

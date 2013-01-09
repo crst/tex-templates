@@ -1,0 +1,51 @@
+\documentclass[11pt, a4paper, foldmarks=false]{scrlttr2}
+\LoadLetterOption{DINmtext}
+
+\usepackage[latin1]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+
+\usepackage{palatino}
+
+
+\usepackage{xcolor}
+\definecolor{links}{HTML}{0000CD}
+
+\usepackage{hyperref}
+\hypersetup{
+  pdftitle=,
+  pdfsubject=,
+  pdfkeywords=,
+  pdfcreator =,
+  pdfproducer =,
+  colorlinks=true,
+  urlcolor = links
+}
+
+\KOMAoptions{paper=a4,fromalign=locationleft,fromrule=false,
+  backaddress=false,parskip=half,enlargefirstpage=true}
+
+\setkomavar{fromname}{Foo Bar}
+\setkomavar{fromaddress}{ABC Road 123\\12345 City}
+
+\setkomavar{signature}{Foo Bar}
+
+\setkomavar{subject}{Subject}
+
+\let\raggedsignature=\raggedright
+
+\begin{document}
+
+\begin{letter}{Company Name\\
+               Foo Street 123\\
+               12345 City}
+
+\opening{Opening,}
+
+\closing{Closing}
+ 
+\encl{}
+
+\end{letter}
+
+\end{document}
